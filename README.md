@@ -40,7 +40,7 @@ The model uses these inputs to predict the student's final grade as a letter gra
 To run the project locally, follow these steps:
 
 ### Step 1: Clone the repository
-```bash
+bash
 git clone https://github.com/your-username/student-performance-predictor.git
 cd student-performance-predictor
 
