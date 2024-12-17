@@ -41,7 +41,7 @@ To run the project locally, follow these steps:
 
 ### Step 1: Clone the repository
 bash
-git clone https://github.com/your-username/student-performance-predictor.git
+git clone (https://github.com/pavankumarkasula73/Student-Performance-Predictor.git)
 cd student-performance-predictor
 
 
