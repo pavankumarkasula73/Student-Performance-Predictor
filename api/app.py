@@ -8,14 +8,10 @@ app = Flask(__name__)
 model = joblib.load('model/student_model.pkl')
 
 # Define the prediction route
-@app.route('/predict', methods=['GET', 'POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
-    if request.method == 'GET':
-        # Send a message if GET request is made
-        return jsonify({'message': 'Send a POST request with attendance, assignments, and test_scores as JSON data.'})
-
     try:
-        # Get input JSON data from POST request
+        # Get input JSON data
         data = request.get_json()
 
         # Extract inputs from JSON
@@ -34,7 +30,6 @@ def predict():
         return jsonify({'predicted_grade': predicted_grade})
 
     except Exception as e:
-        # Handle any errors and return them as JSON
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
