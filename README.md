@@ -45,7 +45,7 @@ git clone https://github.com/your-username/student-performance-predictor.git
 cd student-performance-predictor
 
 
-Step 2: Create and activate a virtual environment
+### Step 2: Create and activate a virtual environment
 bash
 
 python -m venv venv
@@ -54,12 +54,12 @@ venv\Scripts\activate
 # On macOS/Linux
 source venv/bin/activate
 
-Step 3: Install the dependencies
+### Step 3: Install the dependencies
 bash
 
 pip install -r requirements.txt
 
-Step 4: Run the Flask app
+### Step 4: Run the Flask app
 python app.py
 The app will be available at http://127.0.0.1:5000/
 
